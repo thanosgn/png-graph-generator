@@ -15,3 +15,5 @@ rm valgrind_output
 
 echo
 echo "graph drawn in $out"
+
+eog $out &
