@@ -1,5 +1,5 @@
 # png-graph-generator
-Script for generating a png graph of a programm.
+Bash script for generating a png graph of a programm. 
 
 Uses [gprof2dot](https://github.com/jrfonseca/gprof2dot) to convert the callgrind output to a png graph
 
