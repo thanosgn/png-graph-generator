@@ -13,11 +13,6 @@ Uses [gprof2dot](https://github.com/jrfonseca/gprof2dot) to convert the callgrin
   * [Graphviz](http://www.graphviz.org/Download.php): tested with version 2.26.3, but should work fine with other versions.
   
 
-## Windows users
-
-  * Download and install [Python for Windows](http://www.python.org/download/)
-  * Download and install [Graphviz for Windows](http://www.graphviz.org/Download_windows.php)
-
 ## Debian/Ubuntu users
 
   * Run:
