@@ -3,7 +3,10 @@ if [ "$#" -eq 0 ] ; then
   echo "You didn't provide a program"
   exit 1
 else
-	valgrind --log-file=valgrind_output --tool=callgrind --callgrind-out-file=callgrind_output "${@}"
+	valgrind_output="/tmp/valgrind_output"
+	callgrind_output="/tmp/callgrind_output"
+	out_dot="/tmp/out.dot"
+	valgrind --log-file=$valgrind_output --tool=callgrind --callgrind-out-file=$callgrind_output "${@}"
 	
 	status=$?
 	
@@ -11,7 +14,7 @@ else
         echo "Cannot create graph for ${@}"
         exit 1
     fi
-	/usr/local/bin/gprof2dot --format=callgrind --output=out.dot ./callgrind_output
+	/usr/local/bin/gprof2dot --format=callgrind --output=$out_dot $callgrind_output
 
 	out=""
 	for arg in "${@}"
@@ -24,10 +27,10 @@ else
 	fi
 
 	out="$out.png"
-	dot -Tpng out.dot -o "$out"
-	rm callgrind_output
-	rm out.dot
-	rm valgrind_output
+	dot -Tpng $out_dot -o "$out"
+	rm $callgrind_output
+	rm $out_dot
+	rm $valgrind_output
 
 	echo
 	echo "graph drawn in $out"
