@@ -3,9 +3,10 @@ if [ "$#" -eq 0 ] ; then
   echo "You didn't provide a program"
   exit 1
 else
-	valgrind_output="/tmp/valgrind_output"
-	callgrind_output="/tmp/callgrind_output"
-	out_dot="/tmp/out.dot"
+	pid="$$"
+	valgrind_output="/tmp/valgrind_output$pid"
+	callgrind_output="/tmp/callgrind_output$pid"
+	out_dot="/tmp/out.dot$pid"
 	valgrind --log-file=$valgrind_output --tool=callgrind --callgrind-out-file=$callgrind_output "${@}"
 	
 	status=$?
