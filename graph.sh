@@ -23,7 +23,7 @@ else
 	done
 	if git rev-parse --git-dir > /dev/null 2>&1; then
 		branch="$(git symbolic-ref --short -q HEAD)"
-		out="$out|$branch"
+		out="$out--$branch"
 	fi
 
 	out="$out.png"
