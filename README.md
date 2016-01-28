@@ -7,7 +7,7 @@ Uses [gprof2dot](https://github.com/jrfonseca/gprof2dot) to convert the callgrin
 # Usage:
 
 ```
-  graph.sh [**your_program**] [program_arguements]
+  graph.sh your_program [program_arguements]
 ```
 
 # Requirements
