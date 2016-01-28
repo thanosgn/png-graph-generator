@@ -5,7 +5,10 @@ Uses [gprof2dot](https://github.com/jrfonseca/gprof2dot) to convert the callgrin
 
 
 # Usage:
+
+```
   graph.sh [**your_program**] [program_arguements]
+```
 
 # Requirements
 
@@ -17,14 +20,18 @@ Uses [gprof2dot](https://github.com/jrfonseca/gprof2dot) to convert the callgrin
 
   * Run:
 
+```
         apt-get install python graphviz
+```
 
 
 # Download
 
   * [PyPI](https://pypi.python.org/pypi/gprof2dot/)
 
+```
         pip install gprof2dot
+```
 
   * [Standalone script](https://raw.githubusercontent.com/jrfonseca/gprof2dot/master/gprof2dot.py)
 
