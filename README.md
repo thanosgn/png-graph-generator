@@ -14,6 +14,7 @@ Uses [gprof2dot](https://github.com/jrfonseca/gprof2dot) to convert the callgrin
 
   * [Python](http://www.python.org/download/): known to work with version 2.7 and 3.3; it will most likely _not_ work with earlier releases.
   * [Graphviz](http://www.graphviz.org/Download.php): tested with version 2.26.3, but should work fine with other versions.
+  *[Valgrind](http://valgrind.org/)
   
 
 ## Debian/Ubuntu users
@@ -21,7 +22,7 @@ Uses [gprof2dot](https://github.com/jrfonseca/gprof2dot) to convert the callgrin
   * Run:
 
 ```
-        apt-get install python graphviz
+        apt-get install python graphviz valgrind
 ```
 
 
