@@ -37,7 +37,7 @@ Uses [gprof2dot](https://github.com/jrfonseca/gprof2dot) to convert the callgrin
 >  * _total time %_ is the percentage of the running time transfered from the children to this parent (if available);
 >  * _calls_ is the number of calls the parent function called the children.
 
-For more information check original [repository] (https://github.com/jrfonseca/gprof2dot)
+For more information check original [repository](https://github.com/jrfonseca/gprof2dot)
 
 # Requirements
 
